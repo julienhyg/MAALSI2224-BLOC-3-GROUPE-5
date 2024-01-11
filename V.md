@@ -1,3 +1,4 @@
+
 \newpage
 
 #   Passage du POC à l'application finale
@@ -19,6 +20,8 @@ Voici le détail des risques. Nous en retrouvons trois liés à l'infrastructure
  -  **R1** : Comme évoqué, le POC et l'application finale ont des finalités différentes. Là où le POC à affaire à un nombre limité d'utilisateurs et d'interactions, l'application finale doit pouvoir se mettre à l'échelle, s'adapter pour faire face à un éventuel trafic important, sans gêner la navigation pour les utilisateurs.
  -  **R2** : De plus, un POC est généralement conçu pour être résilient aux pannes de composants individuels, là où l'application doit être capable de résister à des pannes plus importantes, comme un fournisseur cloud par exemple. Pour cela, on peut faire appel à des techniques de redondance et de basculement pour anticiper un tel problème.
  -  **R3** : Enfin, l'application finale se doit d'être disponible et assurer une haute-disponibilité 24h/24 et 7j/7, même en cas de panne d'un service. Pour cela, il est intéressant d'utiliser des techniques de surveillance de l'état de santé des services, et de récupération d'urgence. Avec le risque R2, on peut ainsi mettre en place une infrastructure nous permettant d'être disponible à tout instant.
+
+\newpage
 
 En plus de ces risques liés à l'infrastructure, nous déterminons des risques plus fonctionnels :
 

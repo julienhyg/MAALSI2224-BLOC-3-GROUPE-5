@@ -38,6 +38,8 @@ Nous allons comparer quatre méthodes de développement qui sont couramment util
 La méthode en Cascade est probablement la méthode prédictive la plus simple : Toutes les tâches sont définies en avance, elles se suivent dans un ordre séquentiel : chaque tâche doit être complétée avant de pouvoir passer à la suivante. Pour du développement informatique, on pourrait la décomposer en quatre phases : étude, conception, développement, tests et déploiement de la solution. 
 L'avantage étant que cette méthode est simple à comprendre et à mettre en place. Cependant, elle s'avère inadaptée sur plusieurs points; elle est peu flexible dans le sens où il est difficile de s'adapter à un changement de besoin ou de priorité, ce qui est courant dans notre contexte. De plus, elle peut s'avérer longue et coûteuse, et est plutôt dimmensionnée pour des petits projets.
 
+\newpage
+
 #### SCRUM
 
 SCRUM est une méthode ayant une approche itérative qui comporte des cycles courts (appelés sprints) d'environ deux à quatre semaines. Un sprint est composé des phases suivantes : 
@@ -61,6 +63,8 @@ Celle-ci favorise la collaboration et la communication entre les équipes de dé
 Kanban est une autre méthode de type itérative. Celle-ci est beaucoup lié au principe de lean management, qui vise à mieux gérer les flux de travail afin de favoriser la qualité tout en réduisant les déchets. 
 
 Son principal avantage est d'être très visuelle. Au moyen d'un tableau, les tâches représentées sous la forme d'une carte sont disposées en colonnes en fonction des phases du projet. Ainsi, non seulement on gagne en flexibilité en pouvant s'adapter aux besoins et priorités, mais on gagne en communication entre les équipes puisque chacun connait l'état du projet. Cependant, ce mode de travail peut vite être surchargé pour les gros projets, et n'est pas toujours facile à mettre en place.
+
+\newpage
 
 ###  Choix
 
@@ -157,6 +161,9 @@ Pour les solutions envisagées, nous en avons trois :
 
 ![Solutions envisagées.](ASSETS/IMAGES/II/Solutions_envisagees.png){width=50%}
 
+
+\newpage
+
 ###  Application propriétaire
 
 L'application propriétaire serait une solution faite en interne par notre équipe de développement en utilisant uniquement des bibliothèques externes pour la réaliser. Il y a plusieurs avantages à la choisir, la principale étant qu'on aurait une compréhension totale de son fonctionnement, et que l'on a le choix de son architecture, ce qui lui confère une grande évolutivité, maintenabilité, et facilité d'usage pour les développeurs. Cependant, cela se ferait au prix d'un temps de développement assez long, et coûterait bien plus cher que des solutions alternatives. En terme de sécurité, elle reste assez neutre puisque d'un côté on ne disposerait que des fonctionnalités dont on a besoin, ce qui permet de limiter les failles de sécurité potentielles, mais notre équipe ne diposant pas de membre dédié à la sécurité, il sera difficile de découvrir des failles et de les combler sans devoir faire appel à un prestataire externe.
@@ -199,8 +206,6 @@ Ainsi, nous allons définir les critères suivants pour orienter notre choix :
  -  **Sécurité** : La solution propose-t-elle des outils pour se protéger des attaques extérieures ?
  -  **Flexibilité** : La solution peut-elle évoluer facilement face à de nouveaux besoins ?
  -  **Coûts** : La solution est-elle peu onéreuse, tout service compris ?
-
-\newpage
 
 Il existe trois méthodes principales pour héberger une application web afin de la distribuer en ligne :
 

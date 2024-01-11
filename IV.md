@@ -1,3 +1,4 @@
+
 \newpage
 
 #   Mise en place d'une chaîne CI/CD
@@ -62,7 +63,11 @@ Nous allons reprendre l'exemple d'une nouvelle fonctionnalité qui a été déve
 
 Ces étapes de chaîne de déploiement continu permettent de fournir de façon automatisée et fréquente de nouvelles versions de la solution, tout en effectuant des essais pour perturber le moins possible la production, avec la possibilité de revenir en arrière si besoin.
 
+\newpage
+
 ### Intégration sur le POC
+
+ >  Dans le cadre du brouillon, cette section n'est pas complétée. Ce que nous souhaitons faire, suite à la présentation de la chaîne d'intégration continue et de déploiement continu, est de détailler la façon dont nous l'avons implémentée, en incluant la stack technique et justifiant son utilisation sur la façon dont il nous permet de répondre à notre besoin.
 
 Pour les différentes étapes vues précédemment, voici les outils que nous allons utiliser :
 

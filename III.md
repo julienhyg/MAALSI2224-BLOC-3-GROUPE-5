@@ -65,6 +65,8 @@ Enfin, lorsque l'on estime que l'on peut peut publier l'application, on utilise 
 
 Les déploiements entre environnements sont réalisés avec Ansible, qui automatise les tâches de configuration de nos infrastructures. Bien que similaires, il faut voir ces trois environnements comme distincts, en terme de fonctionnalités et de données.
 
+\newpage
+
 ##  Schéma de déploiement commenté
 
 Pour nous permettre d'intégrer de nouvelles fonctionnalités et de les déployer sans impacter les utilisateurs, nous nous devons d'avoir plusieurs environnements distincts, appelés "branches". Nous en avons quatre principales, plus une par fonctionnalité que nous souhaitons intégrer. Ainsi, imaginons que nous souhaitons développer puis intégrer une nouvelle fonctionnalité :

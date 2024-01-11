@@ -47,7 +47,7 @@ Parmi les sources qui peuvent nous intéresser, nous retrouvons :
 
 \newpage
 
-En variant les sources, nous pouvons faire varier les informations et la façon dont elles sont apportées. Pour pouvoir les collecter, il existe différentes méthodes plus ou moins automatisées, comme par exemple la connexion à des flux RSS [^4] ou Atom, ou encore l'utilisation d'application dédiée comme Feedly. Il est également intéressant, selon notre point de vue, d'organiser une réunion bi-mensuelle afin de pouvoir discuter librement de sujets afin de les partager à l'ensemble de l'équipe. Enfin, on peut proposer des webinaires et conférences proposés par des entreprises externes aux membres de l'équipe pour qu'ils collectent des informations et les fassent remonter au reponsable de veille. Un tableau récapitulatif des sources est disponible en annexe.
+En variant les sources, nous pouvons faire varier les informations et la façon dont elles sont apportées. Pour pouvoir les collecter, il existe différentes méthodes plus ou moins automatisées, comme par exemple la connexion à des flux RSS [^4] ou Atom, ou encore l'utilisation d'application dédiée comme Feedly. Il est également intéressant, selon notre point de vue, d'organiser une réunion bi-mensuelle afin de pouvoir discuter librement de sujets afin de les partager à l'ensemble de l'équipe. Enfin, on peut proposer des webinaires et conférences proposés par des entreprises externes aux membres de l'équipe pour qu'ils collectent des informations et les fassent remonter au reponsable de veille. Un tableau récapitulatif des sources est disponible plus bas.
 
 ### Traitement des informations
 
@@ -61,5 +61,11 @@ Enfin, la dernière étape pour les informations est de les partager à l'ensemb
 
 Le système que l'on vient de décrire permet de collecter des informations de la part de plusieurs utilisateurs, qui seront à l'origine de décisions lors de la vie du projet, ainsi que lors de son maintien une fois la modernisation accomplie. Cependant, celui-ci est amené à évoluer, tant en terme de sources de veille, que de mode de fonctionnement, que de partage de l'information.  
 Celui-ci peut être adapté afin de cibler des thèmes de veille plus spécifiques en fonction des besoins, ou des modes de communication qui seraient mieux integrés dans le fonctionnement des équipes.
+
+##  Liste des principales sources d'informations
+
+Voici une liste non-exhaustive de sources sur lesquelles on souhaite s'appuyer afin d'organiser la veille active. Cette liste sera amenée à évoluer dans le temps en fonction des besoins et des retours d'expérience.
+
+![Liste non-exhaustive de sources de veille.](ASSETS/DOCS/I-Liste_source_veille.pdf){width=100%}
 
 [^4]: RSS - Really Simple Syndication
