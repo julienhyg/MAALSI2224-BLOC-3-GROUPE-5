@@ -1,0 +1,33 @@
+---
+title: "MAALSI22 - Projet Collaboratif Bloc 3 - Groupe 5"
+subtitle: "Superviser et assurer le développement des applications logicielles"
+author: ["François ANDRZEJEWSKI", "Paul BOIREAU","Julien HUYGHE"]
+date: "février 2024"
+lang: "fr"
+book: false
+titlepage: true
+titlepage-background: "ASSETS/background-cesi.pdf"
+toc: true
+lof: true
+lot: true
+table-use-row-colors: true
+#mainfont: Avenir Next Regular
+#mainfontoptions:
+#  - UprightFont=Avenir Next Regular
+#  - ItalicFont=Avenir Next Italic
+#  - BoldFont=Avenir Next Demi Bold
+#  - BoldItalicFont=Avenir Next Demi Bold Italic
+fontsize: 11pt
+#sansfont: Gilroy-SemiBold
+#sansfontoptions:
+#  - UprightFont=Gilroy-SemiBold
+#  - ItalicFont=Gilroy-SemiBoldItalic
+#  - BoldFont=Gilroy-SemiBold
+#  - BoldItalicFont=Gilroy-SemiBoldItalic
+#monofont: Gilroy-SemiBold
+#monofontoptions:
+#  - UprightFont=Gilroy-SemiBold
+#  - ItalicFont=Gilroy-SemiBoldItalic
+#  - BoldFont=Gilroy-SemiBold
+#  - BoldItalicFont=Gilroy-SemiBoldItalic
+...
