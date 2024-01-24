@@ -109,7 +109,7 @@ Dès que possible, on va chercher à identifier et corriger la dette technique, 
 Pour cette approche, nous proposons en plus quelques mesures à intégrer dans notre stratégie :
 
  -  **Intégrer la gestion de la dette technique dans nos processus de développement** : on souhaite utiliser des outils permettant de détecter et de corriger la dette technique dès le départ, comme des *linters*, des scanners de code et des outils de gestion des dépendances. Nous allons développer cette partie par la suite.
- -  **Planifier des audits de code réguliers** : à chaque interval de x sprints, nous mettons en place des actions visant à identifier et corriger les éléments de dette technique susceptibles de créer des problèmes majeurs par la suite.
+ -  **Planifier des audits de code réguliers** : à chaque interval de **x** sprints, nous mettons en place des actions visant à identifier et corriger les éléments de dette technique susceptibles de créer des problèmes majeurs par la suite.
  -  **Mettre en place un processus de réécriture du code** : bien que ce ne soit pas idéal, il est probable que nous ayons à réécrire complètement certaines parties de notre application. Il nous faut donc mettre dès à présent un processus qui permet de gérer cette étape, tout en garantissant qu'il n'y a pas de régression ni de nouvelle dette technique.
  -  **Former les développeurs aux bonnes pratiques de développement** : que ce soit sur des principes de conception, de programmation et de documentation, cela nous permettrait de réduire dès le départ notre dette technique.
 
