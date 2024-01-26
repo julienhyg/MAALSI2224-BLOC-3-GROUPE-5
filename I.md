@@ -66,6 +66,6 @@ Celui-ci peut être adapté afin de cibler des thèmes de veille plus spécifiqu
 
 Voici une liste non-exhaustive de sources sur lesquelles on souhaite s'appuyer afin d'organiser la veille active. Cette liste sera amenée à évoluer dans le temps en fonction des besoins et des retours d'expérience.
 
-![Liste non-exhaustive de sources de veille.](ASSETS/DOCS/I-Liste_source_veille.pdf){width=100%}
+![Liste non-exhaustive de sources de veille.](ASSETS/DOCS/I-Liste_source_veille.pdf){width=48%}
 
 [^4]: RSS - Really Simple Syndication

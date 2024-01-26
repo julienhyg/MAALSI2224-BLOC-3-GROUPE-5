@@ -1,87 +1,9 @@
+
 \newpage
 
 #   Architecture proposée
 
 Comme vu précédemment lors de l'introduction, la direction souhaitant se lancer sur le créneau de la vente en ligne, nous a demandé de mettre en place une plateforme de e-commerce. Cette application est faite et maintenue par les développeurs en interne de l'entreprise. Au cours des pages précédentes, nous verrons les critères nous permettant de choisir une solution pour répondre à ce besoin, puis nous verrons comment nous allons mener le projet avec le choix d'une méthode de travail, ainsi que l'architecture et l'hebergement de cette application.
-
-
-##   Benchmark des méthodes de développement
-
-À la demande de la direction, on souhaite moderniser la méthodologie de développement en passant d'une méthode de cycle en V, à une méthode plus adaptée à des besoins informatiques.  
-Ainsi, nous allons établir un comparatif afin d'orienter et d'évaluer nos choix, pour qu'ils correspondent au mieux à notre besoin de modernisation du SI de Breizhsport.
-
-###  Critères
-
-Nous souhaitons évaluer différentes méthodes de travail sur des critères en adéquation avec l'environnement où elle sera utilisée : le développement informatique. Cet environnement est connu pour avoir des besoins et des priorités qui changent très rapidement, et auxquels il est nécessaire de devoir s'adapter afin de mener correctement le projet à terme.
-
-Traditionnellement, on dispose de deux types de méthodes de travail : celles utilisant une approche dite prédictive, et celles utilisant une approche dite itérative. 
-
- -  Le premier est le plus simple, au début du projet on va lister et ordonner toutes les tâches du projet qui sont nécessaires pour mener le projet à terme. Cette approche est surtout utile lorsque le besoin ne risque pas d'évoluer et que l'on souhaite avoir une bonne estimation des coûts et du temps de travail comme ça pourrait être le cas dans le BTP par exemple.
- -  La seconde est dit itératif, car à chaque cycle, chaque itération de celui-ci, on va évaluer le besoin pour définir les priorités de travail. Les cycles et la liste des tâches sont définis au début du projet, mais ils peuvent évoluer au cours de la vie du projet.
-
-Ainsi, chaque méthode de travail est basée sur une approche qui dispose d'avantages par rapport à l'autre. Les méthodes traditionnelles ou de cycle en V utilisent des approches prédictives, là où des méthodes comme le DevOps ou SCRUM sont itératives.  
-Chaque projet étant unique tant concernant la taille, la complexité ou encore les contraintes de temps et de budget, il nous faut trouver celle qui est le plus adaptée à notre projet de modernisation du SI de Breizhsport.  
-
-Afin d'appuyer nos propos, il nous faut nous baser sur des critères de comparaison. Dans notre cas, nous avons choisi les suivants :
-
- -  **Flexibilité** : La méthode permet-elle de s'adapter aux changements de besoins ou de priorités ?
- -  **Réactivité** : La méthode permet-elle de délivrer des livrables rapidement ?
- -  **Qualité** : La méthode permet-elle de produire des logiciels de qualité ?
- -  **Collaboration et communication** : La méthode favorise-t-elle la collaboration et la communication entre les différents membres de l'équipe ?
-
-###  Comparaison
-
-Nous allons comparer quatre méthodes de développement qui sont couramment utilisées : Cascade (aussi appelée traditionnelle ou waterfall), SCRUM, DevOps et Kanban.
-
-#### Cascade
-
-La méthode en Cascade est probablement la méthode prédictive la plus simple : Toutes les tâches sont définies en avance, elles se suivent dans un ordre séquentiel : chaque tâche doit être complétée avant de pouvoir passer à la suivante. Pour du développement informatique, on pourrait la décomposer en quatre phases : étude, conception, développement, tests et déploiement de la solution. 
-L'avantage étant que cette méthode est simple à comprendre et à mettre en place. Cependant, elle s'avère inadaptée sur plusieurs points; elle est peu flexible dans le sens où il est difficile de s'adapter à un changement de besoin ou de priorité, ce qui est courant dans notre contexte. De plus, elle peut s'avérer longue et coûteuse, et est plutôt dimmensionnée pour des petits projets.
-
-\newpage
-
-#### SCRUM
-
-SCRUM est une méthode ayant une approche itérative qui comporte des cycles courts (appelés sprints) d'environ deux à quatre semaines. Un sprint est composé des phases suivantes : 
-
- -  **Sprint planning** (avant): Planification des tâches à effecter durant le sprint.
- -  **Daily** (pendant) : Réunion quotidienne pour suivre l'avancement du sprint.
- -  **Sprint Review** (après): Présentation du travail accompli durant le sprint.
- -  **Retrospective** (après): Réflexion sur le sprint dans une optique d'amélioration continue.
-
-Cette méthode presente plusieurs avantages. Pour commencer, elle favorise le changement de besoins ou de priorités car elle se veut de nature flexible et réactive. De plus, elle favorise la collaboration et la communication entre les différents membres de l'équipe qui ont la liberté de s'auto-organiser pendant un sprint.  
-Cependant, c'est une méthode assez différente de ce que les équipes peuvent connaître, et qui nécessite souvent une réorganisation des équipes pour pouvoir l'exploiter.
-
-#### DevOps
-
-Le DevOps n'est pas à proprement parler une méthode de travail, mais plutôt un concept sur lequel les équipes peuvent se baser pour adapter leurs méthodes de développement. Le but est de rapprocher les équipes de développement et celles d'exploitation afin d'améliorer la collaboration et la communication entre ces deux équipes, pour réduire le temps de mise en production des logiciels.
-
-Celle-ci favorise la collaboration et la communication entre les équipes de développement et d'exploitation, réduit le temps de mise en production, et améliore la qualité des logiciels. Cependant, comme SCRUM, elle peut être compliquée à mettre en place dans certaines entreprises car elle nécessite souvent une réorganisation des équipes.
-
-#### Kanban
-
-Kanban est une autre méthode de type itérative. Celle-ci est beaucoup lié au principe de lean management, qui vise à mieux gérer les flux de travail afin de favoriser la qualité tout en réduisant les déchets. 
-
-Son principal avantage est d'être très visuelle. Au moyen d'un tableau, les tâches représentées sous la forme d'une carte sont disposées en colonnes en fonction des phases du projet. Ainsi, non seulement on gagne en flexibilité en pouvant s'adapter aux besoins et priorités, mais on gagne en communication entre les équipes puisque chacun connait l'état du projet. Cependant, ce mode de travail peut vite être surchargé pour les gros projets, et n'est pas toujours facile à mettre en place.
-
-\newpage
-
-###  Choix
-
-À partir des éléments précédents, nous avons pu établir une matrice de choix basée sur les critères choisis précédemment. La notation se faisant de 1 à 4 afin d'éviter une note moyenne sans être trop simple ni trop complexe, avec 1 représentant un choix inadapté, et 4 un choix adapté.
-
-| Critère/Méthode                | Cascade | SCRUM | DevOps | Kanban |
-|--------------------------------|--------:|------:|-------:|-------:|
-| Flexibilité                    |       1 |     4 |      3 |      3 |
-| Réactivité                     |       1 |     4 |      4 |      3 |
-| Qualité                        |       4 |     3 |      4 |      3 |
-| Collaboration et communication |       1 |     4 |      3 |      2 |
-| **Total**                      |   **7** |**15** | **14** | **11** |
-Table: Matrice de choix de la méthode de travail
-
-À partir de cette matrice, nous en concluant donc que la méthode la plus adaptée pour nos besoins de modernisation du SI de Breizhsport est la méthode SCRUM. Ce choix semble logique puisque la méthode SCRUM a été pensée pour des besoins de développement informatique contrairement à une méthode en Cascade. Néanmoins cela ne signifie pas que cette dernière est mauvaise, elle est juste inadaptée à nos besoins pour ce projet.
-
-\newpage
 
 ##   Benchmark de l'architecture
 
@@ -242,6 +164,89 @@ Table: Grille de choix de la solution d'hébergement.
 Ainsi, à l'aide de ces trois critères de sécurité, flexibilité et coûts, nous envisageons d'orienter le choix de la solution d'hébergement vers un hébergement cloud. Cela correspond bien à la volonté de l'entreprise, tout en étant en adéquation avec notre contexte. Pour rappel, nous ne disposons pas d'équipe pouvant gérer un hébergement en interne, et nous souhaitons avoir de la flexibilité au niveau de notre hébergement.
 
 Ces choix, celui de la solution et de la méthode d'hébergement, nous permettent de valider la demande de la direction d'envisager une infrastructure cloud avec des fonctionnalités cloud native. Pour valider ce fonctionnement, nous mettrons  en place dans un premier temps un POC [^8] afin de valider son fonctionnement et ses fonctionnalités pour ensuite proposer l'application de production.
+
+\newpage
+
+#   Organisation
+
+Suite à ces différents choix techniques, il est nécessaire pour nous de déterminer dès à présent la démarche à adopter pour mener à bien notre projet. Ainsi, nous allons chercher à implémenter une nouvelle méthode de travail qui est plus adaptée à notre nouveau besoin.
+
+##   Benchmark des méthodes de développement
+
+À la demande de la direction, nous souhaitons moderniser la méthodologie de développement en passant d'une méthode de cycle en V, à une méthode plus adaptée à des besoins informatiques.  
+Ainsi, nous allons établir un comparatif afin d'orienter et d'évaluer nos choix, pour qu'ils correspondent au mieux à notre besoin de modernisation du SI de Breizhsport.
+
+###  Critères
+
+Nous souhaitons évaluer différentes méthodes de travail sur des critères en adéquation avec l'environnement où elle sera utilisée : le développement informatique. Cet environnement est connu pour avoir des besoins et des priorités qui changent très rapidement, et auxquels il est nécessaire de devoir s'adapter afin de mener correctement le projet à terme.
+
+Traditionnellement, on dispose de deux types de méthodes de travail : celles utilisant une approche dite prédictive, et celles utilisant une approche dite itérative. 
+
+ -  Le premier est le plus simple, au début du projet on va lister et ordonner toutes les tâches du projet qui sont nécessaires pour mener le projet à terme. Cette approche est surtout utile lorsque le besoin ne risque pas d'évoluer et que l'on souhaite avoir une bonne estimation des coûts et du temps de travail comme ça pourrait être le cas dans le BTP par exemple.
+ -  La seconde est dit itératif, car à chaque cycle, chaque itération de celui-ci, on va évaluer le besoin pour définir les priorités de travail. Les cycles et la liste des tâches sont définis au début du projet, mais ils peuvent évoluer au cours de la vie du projet.
+
+Ainsi, chaque méthode de travail est basée sur une approche qui dispose d'avantages par rapport à l'autre. Les méthodes traditionnelles ou de cycle en V utilisent des approches prédictives, là où des méthodes comme le DevOps ou SCRUM sont itératives.  
+Chaque projet étant unique tant concernant la taille, la complexité ou encore les contraintes de temps et de budget, il nous faut trouver celle qui est le plus adaptée à notre projet de modernisation du SI de Breizhsport.  
+
+Afin d'appuyer nos propos, il nous faut nous baser sur des critères de comparaison. Dans notre cas, nous avons choisi les suivants :
+
+ -  **Flexibilité** : La méthode permet-elle de s'adapter aux changements de besoins ou de priorités ?
+ -  **Réactivité** : La méthode permet-elle de délivrer des livrables rapidement ?
+ -  **Qualité** : La méthode permet-elle de produire des logiciels de qualité ?
+ -  **Collaboration et communication** : La méthode favorise-t-elle la collaboration et la communication entre les différents membres de l'équipe ?
+
+###  Comparaison
+
+Nous allons comparer quatre méthodes de développement qui sont couramment utilisées : Cascade (aussi appelée traditionnelle ou waterfall), SCRUM, DevOps et Kanban.
+
+#### Cascade
+
+La méthode en Cascade est probablement la méthode prédictive la plus simple : Toutes les tâches sont définies en avance, elles se suivent dans un ordre séquentiel : chaque tâche doit être complétée avant de pouvoir passer à la suivante. Pour du développement informatique, on pourrait la décomposer en quatre phases : étude, conception, développement, tests et déploiement de la solution. 
+L'avantage étant que cette méthode est simple à comprendre et à mettre en place. Cependant, elle s'avère inadaptée sur plusieurs points; elle est peu flexible dans le sens où il est difficile de s'adapter à un changement de besoin ou de priorité, ce qui est courant dans notre contexte. De plus, elle peut s'avérer longue et coûteuse, et est plutôt dimmensionnée pour des petits projets.
+
+#### SCRUM
+
+SCRUM est une méthode ayant une approche itérative qui comporte des cycles courts (appelés sprints) d'environ deux à quatre semaines. Un sprint est composé des phases suivantes : 
+
+ -  **Sprint planning** (avant): Planification des tâches à effecter durant le sprint.
+ -  **Daily** (pendant) : Réunion quotidienne pour suivre l'avancement du sprint.
+ -  **Sprint Review** (après): Présentation du travail accompli durant le sprint.
+ -  **Retrospective** (après): Réflexion sur le sprint dans une optique d'amélioration continue.
+
+Cette méthode presente plusieurs avantages. Pour commencer, elle favorise le changement de besoins ou de priorités car elle se veut de nature flexible et réactive. De plus, elle favorise la collaboration et la communication entre les différents membres de l'équipe qui ont la liberté de s'auto-organiser pendant un sprint.  
+Cependant, c'est une méthode assez différente de ce que les équipes peuvent connaître, et qui nécessite souvent une réorganisation des équipes pour pouvoir l'exploiter.
+
+
+\newpage
+
+#### DevOps
+
+Le DevOps n'est pas à proprement parler une méthode de travail, mais plutôt un concept sur lequel les équipes peuvent se baser pour adapter leurs méthodes de développement. Le but est de rapprocher les équipes de développement et celles d'exploitation afin d'améliorer la collaboration et la communication entre ces deux équipes, pour réduire le temps de mise en production des logiciels.
+
+Celle-ci favorise la collaboration et la communication entre les équipes de développement et d'exploitation, réduit le temps de mise en production, et améliore la qualité des logiciels. Cependant, comme SCRUM, elle peut être compliquée à mettre en place dans certaines entreprises car elle nécessite souvent une réorganisation des équipes.
+
+#### Kanban
+
+Kanban est une autre méthode de type itérative. Celle-ci est beaucoup lié au principe de lean management, qui vise à mieux gérer les flux de travail afin de favoriser la qualité tout en réduisant les déchets. 
+
+Son principal avantage est d'être très visuelle. Au moyen d'un tableau, les tâches représentées sous la forme d'une carte sont disposées en colonnes en fonction des phases du projet. Ainsi, non seulement on gagne en flexibilité en pouvant s'adapter aux besoins et priorités, mais on gagne en communication entre les équipes puisque chacun connait l'état du projet. Cependant, ce mode de travail peut vite être surchargé pour les gros projets, et n'est pas toujours facile à mettre en place.
+
+\newpage
+
+###  Choix
+
+À partir des éléments précédents, nous avons pu établir une matrice de choix basée sur les critères choisis précédemment. La notation se faisant de 1 à 4 afin d'éviter une note moyenne sans être trop simple ni trop complexe, avec 1 représentant un choix inadapté, et 4 un choix adapté.
+
+| Critère/Méthode                | Cascade | SCRUM | DevOps | Kanban |
+|--------------------------------|--------:|------:|-------:|-------:|
+| Flexibilité                    |       1 |     4 |      3 |      3 |
+| Réactivité                     |       1 |     4 |      4 |      3 |
+| Qualité                        |       4 |     3 |      4 |      3 |
+| Collaboration et communication |       1 |     4 |      3 |      2 |
+| **Total**                      |   **7** |**15** | **14** | **11** |
+Table: Matrice de choix de la méthode de travail
+
+À partir de cette matrice, nous en concluant donc que la méthode la plus adaptée pour nos besoins de modernisation du SI de Breizhsport est la méthode SCRUM. Ce choix semble logique puisque la méthode SCRUM a été pensée pour des besoins de développement informatique contrairement à une méthode en Cascade. Néanmoins cela ne signifie pas que cette dernière est mauvaise, elle est juste inadaptée à nos besoins pour ce projet.
 
 [^5]: [Étude réalisée par FEVAD (Fédération du e-commerce et de la vente à distance)](https://www.francenum.gouv.fr/magazine-du-numerique/e-commerce-en-france-chiffres-cles-et-5-tendances-fortes)
 [^6]: CMS - Content Management System / Système de Gestion de Contenu
