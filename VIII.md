@@ -1,4 +1,4 @@
-
+﻿
 \newpage
 
 #   Politique de tests
@@ -11,13 +11,13 @@ La politique de tests a pour rôle de répondre à la question du “pourquoi te
 Cette dernière permettra aux équipes de s'appuyer dessus pour élaborer les plans de tests et concevoir des tests qui minimisent les risques identifiés, tout en adaptant le produit au rythme dicté par le marché ou l'organisation.
 Nous décidons de nous appuyer sur la pyramide des tests suivante dans l’ordre indiqué :
 
- -  Tests unitaires
- -  Tests d’intégration 
- -  Tests de sécurité
- -  Test de non régressions
- -  Tests d’API
- -  Tests End to End
- -  Tests Manuels
+ -  **Tests unitaires**
+ -  **Tests d’intégration**
+ -  **Tests de sécurité**
+ -  **Test de non-régressions**
+ -  **Tests d’API**
+ -  **Tests End to End**
+ -  **Tests Manuels**
 
  ![Pyramide des tests](ASSETS/IMAGES/VIII/pyramide_tests.png){width=80%}
 
@@ -31,21 +31,21 @@ Il s’agit donc d’un document fixant les tests répartis par niveau dans la p
 C’est à partir de ce document que les équipes de développement du produit vont construire les plans de tests, ou simplement implémenter les tests internes au produit (tests unitaires et d’intégration par exemple). La stratégie de test porte réellement cette répartition des responsabilités.  
 Elle identifie pour chaque niveau de tests les éléments suivants :
 
- -  Le type de test
- -  Les limites de ce que ce niveau teste
- -  Qui implémente les tests du niveau et quand
- -  Le non testé et les risques associés (et assumés) qui est essentiel et sera demandé lors d’un audit ISO 9001 au titre de la maîtrise des risques, notamment si une partie du produit est fournie par un prestataire et doit faire l’objet de contrôles qualité.
+ -  Le **type de test**
+ -  Les **limites** de ce que ce niveau teste
+ -  **Qui implémente les tests** du niveau et quand
+ -  Le **non testé** et les **risques** associés (et assumés) qui sont essentiels et seront demandés lors d’un audit *ISO 9001* au titre de la maîtrise des risques, notamment si une partie du produit est fournie par un prestataire et doit faire l’objet de contrôles qualité.
 
 La stratégie de test est un document collaboratif entre les différentes équipes et acteurs d’un développement. Elle regroupe les informations sur ce qui sera testé ou non, met en valeur la limite de risque communément acceptée.  
 De ce fait, c'est un document construit durant les phases de conception du produit dans sa globalité, de préférence de manière itérative pour faciliter l’émergence d’un compromis et une bonne correspondance avec l’évolution de la connaissance produit.  
 
 Chaque contributeur doit donc durant ces phases de découverte :
 
- -  Déterminer les niveaux de test qui les incombent.
- -  Déterminer les risques détectables via ces niveaux de tests.
- -  Déterminer si il est nécessaire de faire évoluer la conception pour réduire les facteurs de risque (probabilité, gravité, non-détectabilité) en adaptant la conception pour la rendre plus testable ?
- -  Déterminer le but visé par les tests (Détecter un défaut au plus tôt, valider la bonne implémentation d’un parcours client, détecter une dérive d’une variable de suivi, guider la conception, etc.)
- -  Déterminer les autres acteurs en interface avec les tests dont ils ont la responsabilité et déterminer les informations à échanger avec eux pour faciliter le codéveloppement de la stratégie et plus tard des tests.
+ -  **Déterminer les niveaux de test** qui les incombent.
+ -  **Déterminer les risques détectables** via ces niveaux de tests.
+ -  **Déterminer s’il est nécessaire de faire évoluer la conception** pour réduire les facteurs de risque (probabilité, gravité, non-détectabilité) en adaptant la conception pour la rendre plus testable ?
+ -  **Déterminer le but des tests** (Détecter un défaut au plus tôt, valider la bonne implémentation d’un parcours client, détecter une dérive d’une variable de suivi, guider la conception, etc.)
+ -  **Déterminer les autres acteurs en interface avec les tests** dont ils ont la responsabilité et déterminer les informations à échanger avec eux pour faciliter le codéveloppement de la stratégie et plus tard des tests.
 
 Un des éléments importants dans la qualité d’un projet est la connaissance de la responsabilité de chaque acteur dans les étapes des différents processus conduisant à l’ajout de valeur au produit. Le *RACI* permettra l’attribution des pilotes aux différents niveaux de test.
 Nous utiliserons le *shift-left* aussi appelé décalage à gauche, il signifie que plus un défaut est détecté plus tôt, plus sa correction est facile à effectuer, et plus le coût de correction deviendra faible.  
@@ -53,15 +53,13 @@ Enfin, nous fixerons des règles de sélection des tests en fonction de leur pro
 
 ##  Tests unitaires
 
-Les tests unitaires doivent être isolés et être exécutables sur n'importe quelle machine, dans n'importe quel ordre, sans affecter les uns les autres. Si possible, les tests ne doivent pas dépendre des facteurs environnementaux ou de l'état global / externe. Les tests qui ont ces dépendances sont plus difficiles à exécuter et généralement instables, ce qui les rend plus difficiles à déboguer et à corriger, et finit par coûter plus de temps qu'ils n'en économisent.
-Les tests unitaires doivent aussi être **automatisés** et constitueront la majeure partie de nos tests. Cela peut être quotidien, ou toutes les heures, ou dans le cadre d'un processus d'intégration ou de livraison continue. Les rapports devront être accessibles et examinés par tous les membres de l'équipe. Les équipes devront étudier les métriques comme : la couverture du code, couverture du code modifié, nombre de tests en cours d'exécution, performances, etc.
-
-\newpage
+Les tests unitaires doivent être isolés et être exécutables sur n'importe quelle machine, dans n'importe quel ordre, sans affecter les uns les autres. Si possible, les tests ne doivent pas dépendre des facteurs environnementaux ou de l'état global / externe. Les tests qui ont ces dépendances sont plus difficiles à exécuter et généralement instables, ce qui les rend plus difficiles à déboguer et à corriger, et finissent par coûter plus de temps qu'ils n'en économisent.
+Les tests unitaires doivent aussi être **automatisés** et constitueront la majeure partie de nos tests. Cela peut être quotidien, ou toutes les heures, ou dans le cadre d'un processus d'intégration ou de livraison continue. Les rapports devront être accessibles et examinés par tous les membres de l'équipe. Les équipes devront étudier les métriques comme : la couverture du code, la couverture du code modifié, nombre de tests en cours d'exécution, performances, etc.
 
 ##  Couverture du code
 
 Un outil de couverture de code utilisera un ou plusieurs critères pour déterminer comment notre code a été mis à l'épreuve ou non pendant l'exécution de notre suite de tests.
-Dans notre cas, nous utiliserons **SonarQube** comme outil de couverture du code.Les métriques courantes qui seront mentionnées dans nos rapports de couverture sont les suivantes :
+Dans notre cas, nous utiliserons **SonarQube** comme outil de couverture du code. Les métriques courantes qui seront mentionnées dans nos rapports de couverture sont les suivantes :
 
  -  **Couverture des fonctions** : nombre de fonctions définies ayant été appelées.
  -  **Couverture des instructions** : combien d'instructions du programme ont été exécutées.
@@ -74,7 +72,7 @@ Il faut que notre équipe comprenne comment l’application est censée se compo
 
 ##  Couverture fonctionnelle
 
-Notre *Wordpress* fournit des plugins tel que *Woocommerce* permettant de proposer un service de vente sur le site web. Le framework **Timber** permet de modifier le site web de manière simplifié et donc ajoute une réactivité accrue lors de corrections.
+Notre *Wordpress* fournit des plugins tels que *Woocommerce* permettant de proposer un service de vente sur le site web. Le framework **Timber** permet de modifier le site web de manière simplifiée et donc ajoute une réactivité accrue lors de corrections.
 Le but est d’anticiper sur les besoins futurs, et donc de choisir un outil évolutif.
 
 \newpage
@@ -84,14 +82,12 @@ Le but est d’anticiper sur les besoins futurs, et donc de choisir un outil év
 Le fait de mettre en place une chaine d’intégration continue permet de redéployer les composants et dépendances associés au site web ce qui facilite la détection de problèmes de compatibilités suite à une mise à jour ou modification du site web.
 *GitLab CI* fait partie de *GitLab*. Il s’agit d’une application web avec une *API* qui stocke son état dans une base de données. 
 Le principe consiste à rendre systématique et de façon plus ou moins automatique l'intégration des différents composants d'un système dès que ses composants sont modifiés, pour faire en sorte que les effets produits par ces modifications soient rapidement mesurables. Ceci permet notamment d'éviter les gros bugs difficiles à déceler, et favorise l'agilité dans les projets.
-Des tests de dépendances sont inclus dans ces tests avec **OWASP**.
+Des tests de dépendances sont inclus dans ces tests avec **OWASP**. [^13]
 
-##  Tests de non régression
+##  Tests de non-régression
 
-Enfin, ces tests permettent de valider que la mise en ligne d’une nouvelle fonctionnalité sur un logiciel n’impactera pas les fonctions déjà existantes. Les tests fonctionnels auront bien validé que la nouvelle fonction est opérationnelle mais c’est les tests de non régression qui valideront que cette dernière n’impacte pas les autres fonctionnalités du logiciel.
-Les tests de non régression sont déployés sur un environnement de recette et doivent vérifier au minimum que les fonctionnalités principales ou « critiques » du logiciel sont toujours disponibles après la livraison de nouveaux développements.
-
-\newpage
+Enfin, ces tests permettent de valider que la mise en ligne d’une nouvelle fonctionnalité sur un logiciel n’impactera pas les fonctions déjà existantes. Les tests fonctionnels auront bien validé que la nouvelle fonction est opérationnelle, mais c’est les tests de non-régression qui valideront que cette dernière n’impacte pas les autres fonctionnalités du logiciel.
+Les tests de non-régression sont déployés sur un environnement de recette et doivent vérifier au minimum que les fonctionnalités principales ou « critiques » du logiciel sont toujours disponibles après la livraison de nouveaux développements.
 
 ##   Tests de sécurité
 
@@ -99,13 +95,39 @@ Les tests de sécurité des logiciels sont le processus d'évaluation et de test
 Nous utiliserons **Zaproxy** pour effectuer nos tests de sécurité.
 Ils sont souvent répartis, de manière quelque peu arbitraire, en fonction du type de vulnérabilité testée ou du type de test effectué. Une répartition courante est la suivante :
 
- -  **Évaluation de la vulnérabilité** : Le système est scanné et analysé pour détecter les problèmes de sécurité.
- -  **Test de pénétration (pentesting)** : Le système est analysé et attaqué par des attaquants malveillants simulés.
- -  **Test d'exécution** : Le système fait l'objet d'une analyse et d'un test de sécurité de la part d'un utilisateur final.
- -  **Examen du code** : Le code du système fait l'objet d'un examen et d'une analyse détaillés à la recherche de vulnérabilités en matière de sécurité.
+ -  **Évaluation de la vulnérabilité** : le système est scanné et analysé pour détecter les problèmes de sécurité.
+ -  **Test de pénétration (pentesting)** : le système est analysé et attaqué par des attaquants malveillants simulés.
+ -  **Test d'exécution** : le système fait l'objet d'une analyse et d'un test de sécurité de la part d'un utilisateur final.
+ -  **Examen du code** : le code du système fait l'objet d'un examen et d'une analyse détaillés à la recherche de vulnérabilités en matière de sécurité.
 
 Le pentesting suit généralement les étapes suivantes :
 
- -  **Exploration** : Le testeur tente d'en savoir plus sur le système testé. Il s'agit notamment d'essayer de déterminer quels logiciels sont utilisés, quels points d'extrémité existent, quels sont les correctifs installés, etc. Il s'agit également de rechercher sur le site des contenus cachés, des vulnérabilités connues et d'autres indications de faiblesse.
- -  **Attaque** : Le testeur tente d'exploiter les vulnérabilités connues ou suspectées pour prouver leur existence.
- -  **Rapport** : Le testeur rend compte des résultats de ses tests, y compris les vulnérabilités, la manière dont il les a exploitées, la difficulté des exploits et la gravité de l'exploitation.
+ -  **Exploration** : le testeur tente d'en savoir plus sur le système testé. Il s'agit notamment d'essayer de déterminer quels logiciels sont utilisés, quels points d'extrémité existent, quels sont les correctifs installés, etc. Il s'agit également de rechercher sur le site des contenus cachés, des vulnérabilités connues et d'autres indications de faiblesse.
+ -  **Attaque** : le testeur tente d'exploiter les vulnérabilités connues ou suspectées pour prouver leur existence.
+ -  **Rapport** : le testeur rend compte des résultats de ses tests, y compris les vulnérabilités, la manière dont il les a exploitées, la difficulté des exploits et la gravité de l'exploitation.
+
+##  Tests d’API
+
+Les tests des *API* garantissent que les connexions entre les plates-formes sont fiables, sûres et évolutives. Des connexions *API* solides sont fortement corrélées à un parcours utilisateur fluide, se classant aux côtés des tests de régression et des tests *UX* de bout en bout comme l'un des outils les plus efficaces dont disposent les testeurs pour améliorer la satisfaction client.  
+Les tests d'*API* automatisés sont intégrés aux pipelines de développement dans le cadre de stratégies de tests continus, les équipes de qualité sont en mesure de détecter rapidement les problèmes avant qu'ils n'affectent les clients.
+
+##  Tests End to End
+
+Avec l’outil [**Cypress**](https://docs.cypress.io/guides/references/configuration), nous pouvons effectuer les tests **E2E** qui vérifient l’intégralité d’une application, du début, par exemple l’arrivée sur la page d’accueil et la phase de connexion, jusqu’à la fin. Ils permettent de voir si l’application répond correctement.  
+Le but principal de ce test est de **tester l’expérience de l’utilisateur final en simulant un scénario réel de cas d’utilisation**, de vérifier si le produit se comporte comme convenu, et de valider l’intégrité des données.
+
+##  Tests manuels
+
+Les tests manuels seront utilisés en dernier recours pour couvrir les tests que les tests automatisés ne peuvent pas effectuer.  
+
+
+##  Tests de charge
+
+Pour cela nous utiliserons [**K6**](https://k6.io/) qui est l’un des meilleurs outils et largement utilisés pour l’automatisation des pipelines **CI/CD** et les tests de charge automatisés **CI/CD**. Il est open source et fournit une pléthore de plugins utiles pour la mise en œuvre de la séquence de construction, le déploiement et les tests d’automatisation.  
+
+##  Mise à disposition des résultats des tests
+
+Dans une optique de transparence et d'amélioration continue, les résultats seront mis à disposition sur un partage réseau et les procédures de tests ainsi que la stratégie des tests sur une plateforme de type **Confluence** d'**Atlassian** accessible aux utilisateurs ayant un droit d’accès.
+
+
+[^13]: OWASP - *Open Worldwide Application Security Project* est une fondation dont le but est d'améliorer la sécurité des logiciels.

@@ -17,7 +17,7 @@ table-use-row-colors: true
 #  - ItalicFont=Avenir Next Italic
 #  - BoldFont=Avenir Next Demi Bold
 #  - BoldItalicFont=Avenir Next Demi Bold Italic
-fontsize: 11pt
+fontsize: 10pt
 #sansfont: Gilroy-SemiBold
 #sansfontoptions:
 #  - UprightFont=Gilroy-SemiBold
