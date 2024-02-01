@@ -91,8 +91,9 @@ Plusieurs jobs ont été mis en place pour couvrir l’ensemble des étapes pour
  -  La qualité du code va pouvoir être vérifiée grâce à l’outil **Sonarqube** que nous avons intégré dans le job « code-quality ». **Sonarqube** s’intègre parfaitement dans la chaine que nous avons mise en place, raison pour laquelle nous l’avons choisi.
  -  Les tests de sécurité seront effectués dans le job « security-check » grâce à l’outil **Zaproxy**.  
  -  Les tests *E2E* seront effectués dans le job « e2e_tests » à l’aide de l’outil **Cypress** auquel nous faisons appel via son interface permettant de simuler des cas d’usage utilisateur de l'application web.  
+ -  Pour le déploiement, nous disposons d'une image "Deploy", nous le faisons avec **Ansible** dont le fonctionnement sera détaillé par la suite.
 
-Les outils précédemment cités dans chacun de ces *jobs* ont été c**hoisis, car non coûteux, s’intégrant parfaitement à notre chaine, ayant un repository respectif mis continuellement à jour ainsi qu’une documentation claire et également mise à jour**.
+Les outils précédemment cités dans chacun de ces *jobs* ont été **choisis, car non coûteux, s’intégrant parfaitement à notre chaine, ayant un repository respectif mis continuellement à jour ainsi qu’une documentation claire et également mise à jour**.
 Le déploiement est effectué lors du dernier *job*, c’est alors qu’intervient **Ansible** dans notre chaine d’intégration continue.  
 **Ansible** est un outil open source permettant le déploiement de serveurs, l'exécution des tâches *ad hoc* et la gestion de configuration. C’est un outil qui est très utilisé dans bon nombre d’entreprises. Elle gère les différents nœuds au travers d'un protocole *SSH* et ne nécessite l'installation d'aucun logiciel supplémentaire sur ceux-ci. Les modules communiquent via la sortie standard en notation *JSON* et peuvent être écrits dans n'importe quel langage de programmation. Le système utilise *YAML* pour exprimer des descriptions réutilisables de systèmes, appelées *playbook*.  
 

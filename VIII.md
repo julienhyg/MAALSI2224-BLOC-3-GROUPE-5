@@ -72,7 +72,7 @@ Il faut que notre équipe comprenne comment l’application est censée se compo
 
 ##  Couverture fonctionnelle
 
-Notre *Wordpress* fournit des plugins tels que *Woocommerce* permettant de proposer un service de vente sur le site web. Le framework **Timber** permet de modifier le site web de manière simplifiée et donc ajoute une réactivité accrue lors de corrections.
+Notre site web *Wordpress* fournit des plugins tels que *Woocommerce* permettant de proposer un service de vente sur le site web. Le framework **Timber** permet de modifier le site web de manière simplifiée et donc ajoute une réactivité accrue lors de corrections.
 Le but est d’anticiper sur les besoins futurs, et donc de choisir un outil évolutif.
 
 \newpage
@@ -86,7 +86,7 @@ Des tests de dépendances sont inclus dans ces tests avec **OWASP**. [^13]
 
 ##  Tests de non-régression
 
-Enfin, ces tests permettent de valider que la mise en ligne d’une nouvelle fonctionnalité sur un logiciel n’impactera pas les fonctions déjà existantes. Les tests fonctionnels auront bien validé que la nouvelle fonction est opérationnelle, mais c’est les tests de non-régression qui valideront que cette dernière n’impacte pas les autres fonctionnalités du logiciel.
+Ces tests permettent de valider que la mise en ligne d’une nouvelle fonctionnalité sur un logiciel n’impactera pas les fonctions déjà existantes. Les tests fonctionnels auront bien validé que la nouvelle fonction est opérationnelle, mais c’est les tests de non-régression qui valideront que cette dernière n’impacte pas les autres fonctionnalités du logiciel.
 Les tests de non-régression sont déployés sur un environnement de recette et doivent vérifier au minimum que les fonctionnalités principales ou « critiques » du logiciel sont toujours disponibles après la livraison de nouveaux développements.
 
 ##   Tests de sécurité
@@ -113,7 +113,7 @@ Les tests d'*API* automatisés sont intégrés aux pipelines de développement d
 
 ##  Tests End to End
 
-Avec l’outil [**Cypress**](https://docs.cypress.io/guides/references/configuration), nous pouvons effectuer les tests **E2E** qui vérifient l’intégralité d’une application, du début, par exemple l’arrivée sur la page d’accueil et la phase de connexion, jusqu’à la fin. Ils permettent de voir si l’application répond correctement.  
+Les tests **E2E** pourront être effectués à l'aide de l’outil [**Cypress**](https://docs.cypress.io/guides/references/configuration), qui vérifient l’intégralité d’une application, du début, par exemple l’arrivée sur la page d’accueil et la phase de connexion, jusqu’à la fin. Ils permettent de voir si l’application répond correctement.  
 Le but principal de ce test est de **tester l’expérience de l’utilisateur final en simulant un scénario réel de cas d’utilisation**, de vérifier si le produit se comporte comme convenu, et de valider l’intégrité des données.
 
 ##  Tests manuels
